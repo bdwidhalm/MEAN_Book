@@ -1,0 +1,24 @@
+Notes from the MEAN book
+========================
+
+
+CH1
+---
+
+
+CH2
+---
+
+
+CH3
+---
+
+
+CH4
+---
+Many functions have 'Sync' appended to the name:
+fs.readFile(...) vs. fs.readFileSync(...)
+asynchronous     vs.  synchronous
+Asynchrouous calls aren't wrapped with try..catch, error is passed back to callback function to be handled.  
+
+Synchronous calls need try...catch
