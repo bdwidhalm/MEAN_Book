@@ -1,0 +1,17 @@
+var fs = require('fs');
+var data = 'some more file data\r';
+
+function writeFileCallback(error) {
+    if (error) {
+        return console.error(error.message);
+    }
+};
+
+// OVERWRITES EXISTING FILE:
+//fs.writeFile(__dirname + '/foo.txt', data, writeFileCallback);
+
+// ERROR IF FILE ALREADY EXISTS:
+//fs.writeFile(__dirname + '/foo.txt', data, {flag: 'wx'}, writeFileCallback);
+
+// APPEND TO FILE:
+fs.writeFile(__dirname + '/foo.txt', data, {flag: 'a'}, writeFileCallback);

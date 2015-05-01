@@ -21,4 +21,22 @@ fs.readFile(...) vs. fs.readFileSync(...)
 asynchronous     vs.  synchronous
 Asynchrouous calls aren't wrapped with try..catch, error is passed back to callback function to be handled.  
 
-Synchronous calls need try...catch
+Synchronous calls need try...catch [used with functions like JSON.parse()]
+
+
+
+CH5
+---
+Reading arguments from command line, via process.argv array
+first 2 arguments are executable followed by the name of the invoked JS file
+actual application arguments begin at process.argv[2]
+
+fileRead() - returns a Buffer object
+you can either use .toString() to convert to string
+or specify 'utf8' (or other encoding) to return readable data
+
+writeFile() - defaults to utf8 encoding 
+wx flag causes error if file already exists
+a flag causes data to append to file
+http://nodejs.org/api/fs.html#fs_fs_open_path_flags_mode_callback
+
