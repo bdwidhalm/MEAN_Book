@@ -37,6 +37,25 @@ or specify 'utf8' (or other encoding) to return readable data
 
 writeFile() - defaults to utf8 encoding 
 wx flag causes error if file already exists
-a flag causes data to append to file
+a flag causes data to append to file  (doesn't add new line)
 http://nodejs.org/api/fs.html#fs_fs_open_path_flags_mode_callback
 
+for more info on generic TCP/IP programming for Node:
+http://nodejs.org/api/net.html
+
+
+HTTP server
+-----------
+'createServer()' executed callback for each request from the client
+'req' argument contains info about the client and requestd resource
+'res' argument contains info and methods regarding the response.
+
+'writeHead()' method writes status code and options to the headers. 
+'res.end()' MANDATORY call that is required to complete the connection
+'res.end()' supports taking the same arguments as 'res.write()'
+This means the entire response can be written via the 'res.end()'
+
+Routes
+------
+perform different actions based on the request method and URL
+combo of HTTP verb and requested URL
