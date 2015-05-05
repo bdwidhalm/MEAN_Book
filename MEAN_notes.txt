@@ -59,3 +59,8 @@ Routes
 ------
 perform different actions based on the request method and URL
 combo of HTTP verb and requested URL is known as a route
+
+
+CH6
+---
+
