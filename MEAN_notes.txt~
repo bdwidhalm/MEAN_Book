@@ -61,4 +61,8 @@ perform different actions based on the request method and URL
 combo of HTTP verb and requested URL is known as a route
 
 
+CH6
+---
+common practice to execute the callback function on error and 'bubble the error back up to the calling function
 
+In Node, the common callback convention is that the first argument to a callback function should be the error object, 
