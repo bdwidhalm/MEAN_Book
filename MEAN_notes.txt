@@ -66,3 +66,11 @@ CH6
 common practice to execute the callback function on error and 'bubble the error back up to the calling function
 
 In Node, the common callback convention is that the first argument to a callback function should be the error object, or null if there were no errors.  
+
+CH7
+---
+
+
+
+CH8
+---
