@@ -15,25 +15,26 @@ db.on('error', function () {
   console.log('there was an error communicating with the databse');
 });
 
-mongoose.connect(dbUrl, function (err) {
-  if (err) {
-    return console.log('there was a problem connecting to the database' + err);
-  }
-
+mongoose.connect(dbUrl, function () {
   console.log('connected!');
-  var team = new Team({
-    name: 'Product Development'
-  });
 
-  team.save(function (error, data) {
+  Team.create([{
+    name: 'Product Development'
+  }, {
+    name: 'Dev Ops'
+  }, {
+    name: 'Accounting'
+  }], function (error, pd, devops, acct) {
     if (error) {
       console.log(error);
     } else {
-      console.dir(data);
-    }
+      console.dir(pd);
+      console.dir(devops);
+      console.dir(acct);
 
-    db.close();
-    process.exit();
+      db.close();
+      process.exit;
+    }
   });
 });
 
