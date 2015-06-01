@@ -1,0 +1,207 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'async',
+1 verbose cli   'mongoos-post-find' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink /usr/bin/node
+5 warn package.json HRapp@1.0.0 No description
+6 warn package.json HRapp@1.0.0 No repository field.
+7 warn package.json HRapp@1.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'async', null ]
+10 verbose cache add name=undefined spec="async" args=["async",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'async',
+11 verbose parsed url   path: 'async',
+11 verbose parsed url   href: 'async' }
+12 verbose cache add [ 'mongoos-post-find', null ]
+13 verbose cache add name=undefined spec="mongoos-post-find" args=["mongoos-post-find",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'mongoos-post-find',
+14 verbose parsed url   path: 'mongoos-post-find',
+14 verbose parsed url   href: 'mongoos-post-find' }
+15 silly lockFile b7e04b33-async async
+16 verbose lock async /home/brian/.npm/b7e04b33-async.lock
+17 silly lockFile 515d7bdb-mongoos-post-find mongoos-post-find
+18 verbose lock mongoos-post-find /home/brian/.npm/515d7bdb-mongoos-post-find.lock
+19 silly lockFile b7e04b33-async async
+20 silly lockFile b7e04b33-async async
+21 verbose addNamed [ 'async', '' ]
+22 verbose addNamed [ null, '*' ]
+23 silly lockFile f9113900-async async@
+24 verbose lock async@ /home/brian/.npm/f9113900-async.lock
+25 silly lockFile 515d7bdb-mongoos-post-find mongoos-post-find
+26 silly lockFile 515d7bdb-mongoos-post-find mongoos-post-find
+27 silly addNameRange { name: 'async', range: '*', hasData: false }
+28 verbose addNamed [ 'mongoos-post-find', '' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile bef3f87a-mongoos-post-find mongoos-post-find@
+31 verbose lock mongoos-post-find@ /home/brian/.npm/bef3f87a-mongoos-post-find.lock
+32 silly addNameRange { name: 'mongoos-post-find', range: '*', hasData: false }
+33 verbose request where is /mongoos-post-find
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id efdb8a554fd32e90
+36 verbose url raw /mongoos-post-find
+37 verbose url resolving [ 'https://registry.npmjs.org/', './mongoos-post-find' ]
+38 verbose url resolved https://registry.npmjs.org/mongoos-post-find
+39 verbose request where is https://registry.npmjs.org/mongoos-post-find
+40 info trying registry request attempt 1 at 06:54:48
+41 http GET https://registry.npmjs.org/mongoos-post-find
+42 verbose request where is /async
+43 verbose request registry https://registry.npmjs.org/
+44 verbose url raw /async
+45 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+46 verbose url resolved https://registry.npmjs.org/async
+47 verbose request where is https://registry.npmjs.org/async
+48 info trying registry request attempt 1 at 06:54:48
+49 verbose etag "7JRSJIA3JOSNQNWFDDQ4GEA29"
+50 http GET https://registry.npmjs.org/async
+51 http 404 https://registry.npmjs.org/mongoos-post-find
+52 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 verbose headers   'content-type': 'application/json',
+52 verbose headers   'cache-control': 'max-age=0',
+52 verbose headers   'content-length': '51',
+52 verbose headers   'accept-ranges': 'bytes',
+52 verbose headers   date: 'Mon, 01 Jun 2015 13:04:48 GMT',
+52 verbose headers   via: '1.1 varnish',
+52 verbose headers   age: '0',
+52 verbose headers   connection: 'keep-alive',
+52 verbose headers   'x-served-by': 'cache-dfw1832-DFW',
+52 verbose headers   'x-cache': 'MISS',
+52 verbose headers   'x-cache-hits': '0',
+52 verbose headers   'x-timer': 'S1433163888.698920,VS0,VE50' }
+53 silly registry.get cb [ 404,
+53 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+53 silly registry.get     'content-type': 'application/json',
+53 silly registry.get     'cache-control': 'max-age=0',
+53 silly registry.get     'content-length': '51',
+53 silly registry.get     'accept-ranges': 'bytes',
+53 silly registry.get     date: 'Mon, 01 Jun 2015 13:04:48 GMT',
+53 silly registry.get     via: '1.1 varnish',
+53 silly registry.get     age: '0',
+53 silly registry.get     connection: 'keep-alive',
+53 silly registry.get     'x-served-by': 'cache-dfw1832-DFW',
+53 silly registry.get     'x-cache': 'MISS',
+53 silly registry.get     'x-cache-hits': '0',
+53 silly registry.get     'x-timer': 'S1433163888.698920,VS0,VE50' } ]
+54 silly lockFile bef3f87a-mongoos-post-find mongoos-post-find@
+55 silly lockFile bef3f87a-mongoos-post-find mongoos-post-find@
+56 http 200 https://registry.npmjs.org/async
+57 silly registry.get cb [ 200,
+57 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+57 silly registry.get     etag: '"74PXH1Y6TQ8OPUBXI6VDRFRGQ"',
+57 silly registry.get     'content-type': 'application/json',
+57 silly registry.get     'cache-control': 'max-age=60',
+57 silly registry.get     'content-length': '114563',
+57 silly registry.get     'accept-ranges': 'bytes',
+57 silly registry.get     date: 'Mon, 01 Jun 2015 13:04:48 GMT',
+57 silly registry.get     via: '1.1 varnish',
+57 silly registry.get     age: '46',
+57 silly registry.get     connection: 'keep-alive',
+57 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+57 silly registry.get     'x-cache': 'HIT',
+57 silly registry.get     'x-cache-hits': '6',
+57 silly registry.get     'x-timer': 'S1433163888.826215,VS0,VE0',
+57 silly registry.get     vary: 'Accept' } ]
+58 silly addNameRange number 2 { name: 'async', range: '*', hasData: true }
+59 silly addNameRange versions [ 'async',
+59 silly addNameRange   [ '0.1.0',
+59 silly addNameRange     '0.1.1',
+59 silly addNameRange     '0.1.2',
+59 silly addNameRange     '0.1.3',
+59 silly addNameRange     '0.1.4',
+59 silly addNameRange     '0.1.5',
+59 silly addNameRange     '0.1.6',
+59 silly addNameRange     '0.1.7',
+59 silly addNameRange     '0.1.8',
+59 silly addNameRange     '0.1.9',
+59 silly addNameRange     '0.1.10',
+59 silly addNameRange     '0.1.11',
+59 silly addNameRange     '0.1.12',
+59 silly addNameRange     '0.1.13',
+59 silly addNameRange     '0.1.14',
+59 silly addNameRange     '0.1.15',
+59 silly addNameRange     '0.1.16',
+59 silly addNameRange     '0.1.17',
+59 silly addNameRange     '0.1.18',
+59 silly addNameRange     '0.1.19',
+59 silly addNameRange     '0.1.20',
+59 silly addNameRange     '0.1.21',
+59 silly addNameRange     '0.1.22',
+59 silly addNameRange     '0.2.0',
+59 silly addNameRange     '0.2.1',
+59 silly addNameRange     '0.2.2',
+59 silly addNameRange     '0.2.3',
+59 silly addNameRange     '0.2.4',
+59 silly addNameRange     '0.2.5',
+59 silly addNameRange     '0.2.6',
+59 silly addNameRange     '0.2.7',
+59 silly addNameRange     '0.2.8',
+59 silly addNameRange     '0.2.9',
+59 silly addNameRange     '0.2.10',
+59 silly addNameRange     '0.3.0',
+59 silly addNameRange     '0.4.0',
+59 silly addNameRange     '0.4.1',
+59 silly addNameRange     '0.5.0',
+59 silly addNameRange     '0.6.0',
+59 silly addNameRange     '0.6.1',
+59 silly addNameRange     '0.6.2',
+59 silly addNameRange     '0.7.0',
+59 silly addNameRange     '0.8.0',
+59 silly addNameRange     '0.9.0',
+59 silly addNameRange     '0.9.2',
+59 silly addNameRange     '1.0.0',
+59 silly addNameRange     '1.1.0' ] ]
+60 verbose addNamed [ 'async', '1.1.0' ]
+61 verbose addNamed [ '1.1.0', '1.1.0' ]
+62 silly lockFile 343aa7e4-async-1-1-0 async@1.1.0
+63 verbose lock async@1.1.0 /home/brian/.npm/343aa7e4-async-1-1-0.lock
+64 silly lockFile 85933170--npmjs-org-async-async-1-1-0-tgz https://registry.npmjs.org/async/-/async-1.1.0.tgz
+65 verbose lock https://registry.npmjs.org/async/-/async-1.1.0.tgz /home/brian/.npm/85933170--npmjs-org-async-async-1-1-0-tgz.lock
+66 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-1.1.0.tgz',
+66 verbose addRemoteTarball   '2b33ea3e87fc0c5ed624f9e31a9c902c022da09b' ]
+67 info retry fetch attempt 1 at 06:54:49
+68 verbose fetch to= /tmp/npm-4002-sp2wTaaS/registry.npmjs.org/async/-/async-1.1.0.tgz
+69 http GET https://registry.npmjs.org/async/-/async-1.1.0.tgz
+70 http 200 https://registry.npmjs.org/async/-/async-1.1.0.tgz
+71 silly lockFile 85933170--npmjs-org-async-async-1-1-0-tgz https://registry.npmjs.org/async/-/async-1.1.0.tgz
+72 silly lockFile 85933170--npmjs-org-async-async-1-1-0-tgz https://registry.npmjs.org/async/-/async-1.1.0.tgz
+73 silly lockFile 343aa7e4-async-1-1-0 async@1.1.0
+74 silly lockFile 343aa7e4-async-1-1-0 async@1.1.0
+75 silly lockFile f9113900-async async@
+76 silly lockFile f9113900-async async@
+77 error 404 404 Not Found: mongoos-post-find
+77 error 404
+77 error 404 'mongoos-post-find' is not in the npm registry.
+77 error 404 You should bug the author to publish it
+77 error 404 It was specified as a dependency of 'HRapp'
+77 error 404
+77 error 404 Note that you can also install from a
+77 error 404 tarball, folder, or http url, or git url.
+78 error System Linux 3.13.0-24-generic
+79 error command "/usr/bin/node" "/usr/bin/npm" "install" "--save" "async" "mongoos-post-find"
+80 error cwd /home/brian/MEAN_book/HRapp
+81 error node -v v0.10.36
+82 error npm -v 1.4.28
+83 error code E404
+84 verbose exit [ 1, true ]
