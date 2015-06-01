@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "populate": "node ./bin/populate_db"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.1.0"
+    "async": "^1.1.0",
+    "colors": "^1.1.0",
+    "mongoose": "^4.0.4",
+    "mongoose-post-find": "0.0.2"
   }
 }
