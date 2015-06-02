@@ -116,3 +116,26 @@ Optional Parameters
 multiple optional parameters:
 /teams/:teamName?/employees/:employeeId?
 (not recommended hard to document and debug)
+
+
+CH12
+----
+
+Starting the Server (not node app.js) run node bin/www
+or run npm start (added to package.json scripts)
+[NOTE: must do a 'sudo npm install' after running 'express' to install all dependencies!]
+www script is entry point for server, calls in app.js
+app.js still houses majority of the server logic
+
+Middleware example demo:
+function retrieveEmployee (req, res, next) {
+  Employee.findOne({
+    _id: req.params.employeeId
+  }).exec(function (error, employee) {
+    if (error) {
+      return next(error);
+    }
+    res.locals.employee = employee;
+    return next();
+  });
+}
