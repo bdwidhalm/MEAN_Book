@@ -19,7 +19,7 @@ CH4
 Many functions have 'Sync' appended to the name:
 fs.readFile(...) vs. fs.readFileSync(...)
 asynchronous     vs.  synchronous
-Asynchrouous calls aren't wrapped with try..catch, error is passed back to callback function to be handled.  
+Asynchrouous calls aren't wrapped with try..catch, error is passed back to callback function to be handled.
 
 Synchronous calls need try...catch [used with functions like JSON.parse()]
 
@@ -35,7 +35,7 @@ fileRead() - returns a Buffer object
 you can either use .toString() to convert to string
 or specify 'utf8' (or other encoding) to return readable data
 
-writeFile() - defaults to utf8 encoding 
+writeFile() - defaults to utf8 encoding
 wx flag causes error if file already exists
 a flag causes data to append to file  (doesn't add new line)
 http://nodejs.org/api/fs.html#fs_fs_open_path_flags_mode_callback
@@ -50,7 +50,7 @@ HTTP server
 'req' argument contains info about the client and requestd resource
 'res' argument contains info and methods regarding the response.
 
-'writeHead()' method writes status code and options to the headers. 
+'writeHead()' method writes status code and options to the headers.
 'res.end()' MANDATORY call that is required to complete the connection
 'res.end()' supports taking the same arguments as 'res.write()'
 This means the entire response can be written via the 'res.end()'
@@ -65,12 +65,54 @@ CH6
 ---
 common practice to execute the callback function on error and 'bubble the error back up to the calling function
 
-In Node, the common callback convention is that the first argument to a callback function should be the error object, or null if there were no errors.  
+In Node, the common callback convention is that the first argument to a callback function should be the error object, or null if there were no errors.
 
 CH7
 ---
 
 
-
 CH8
 ---
+
+
+CH9
+---
+HRapp
+
+CH10
+----
+mySQL
+
+CH11
+----
+Express framework!
+  1. the router
+  2. routes
+  3. middleware
+
+*Router - robust request routing.
+app.get('/employees/:id', function(req, res, next){...});
+Route Lookup - order in which routes are added to the router is very important
+Static Files - express.static(directory);
+
+*Middleware - function(req, res, next)
+req: incoming request object (http.ClientRequest)
+res: response object (http.ServerResponse)
+next: callback function [can NOT pass data to next]
+
+*Routes - HTTP verb and a path
+HTTP verbs: GET, POST, PUT, and DELETE
+GET: get data from a web server
+POST: send data to a web server
+DELETE: delete information from a web server
+PUT: update existing data on a web server
+
+URI: Uniform Resource Identifier
+
+Optional Parameters
+? makes a parameter optional
+/teams/:teamName/employees/:employeeId?
+
+multiple optional parameters:
+/teams/:teamName?/employees/:employeeId?
+(not recommended hard to document and debug)
