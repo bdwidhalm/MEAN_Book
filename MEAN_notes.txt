@@ -152,3 +152,7 @@ difficult bug to track down.
 Router Object
 route registration broken into one or more files.
 in app.js [app.use('/users', users)] routes are in /routes/users.json
+
+
+CH13
+----
