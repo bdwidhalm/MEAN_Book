@@ -156,3 +156,15 @@ in app.js [app.use('/users', users)] routes are in /routes/users.json
 
 CH13
 ----
+HRapp
+
+
+CH14
+----
+Alternative server frameworks to Express
+
+Hapi (developed by Walmart Labs)
+second most popular Node framework
+very different from Express
+
+configuration-centric 
