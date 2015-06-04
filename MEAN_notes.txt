@@ -168,3 +168,31 @@ second most popular Node framework
 very different from Express
 
 configuration-centric
+
+CH15
+----
+Angular.js!!!!!!!!!!
+
+MVC
+Model-View-Controller Architecture
+
+The controller component manipulates the model's data
+
+Angular allows you to use HTML, in conjunction with extentions known
+as directives, as a templating language for view creation.
+
+Two-way data binding
+when the user updates the view, the model is automatically updated too
+if the model data is updated the view is updated as well
+
+USIING ANGULAR (include a <script> tag):
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js">
+</script>
+
+(will load over http or https protocol whichever your application uses)
+if debugging locally and a 'file not found' error occur try adding 'http' or 'https'
+
+input bind to model with ng-model='example'
+div bind to model with {{example}}
+
+page is defined as an Angular application with ng-app on the html element
