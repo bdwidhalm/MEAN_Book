@@ -196,3 +196,34 @@ input bind to model with ng-model='example'
 div bind to model with {{example}}
 
 page is defined as an Angular application with ng-app on the html element
+
+CH16
+----
+Data Binding
+
+Angular handles Two-Way Data Binding
+
+uses new attributes inside normal HTML elements
+all attributes for Angular start with 'ng'
+
+'ng-app' declare the <html> tag to be the root element for the application
+'ng-model' on the input tags establish a two-way binding to the variable given
+{{variable}} is used to display the two-way bound data
+concatenation of data: {{firstName + ' ' + lastName}}
+'ng-click' attaches a click event (uses an Angular expression)
+Angular expression = a JavaScript-like code snippet
+'ng-style' sets the style for the <h2> tag
+'ng-disabled' toggles the enabled state of the button based on the Angular Expression
+
+A scope object is a JavaScript object created with an Angular constructor
+that is used as the model for HTML markup.
+
+Angular two-way binding uses $watch list, a small event emitter that can
+send and receive events for the data model or UI.
+
+Digest loop - runs anytime a browser event happens
+
+'ng-repeat' loops over the list and displays a table row for each entry
+
+'$parent.remove' is used because the button is inside the 'ng-repeat'
+directive therefor has to reach up to the parent element ('main')
