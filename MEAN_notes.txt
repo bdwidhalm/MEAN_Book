@@ -227,3 +227,27 @@ Digest loop - runs anytime a browser event happens
 
 '$parent.remove' is used because the button is inside the 'ng-repeat'
 directive therefor has to reach up to the parent element ('main')
+
+CH17
+----
+Angular Directives
+(allow Angular to extend HTML syntax)
+
+Official Documentation:
+At a high level, directives are markers on a DOM element that tell
+AngularJS's HTML compiler($compile) to attach a specified behavior
+to that DOM element or even transform the DOM element and its
+children.
+
+Example (ng-foo not real directive):
+<ng-foo>Here it is used as an element</ng-foo>
+
+<div ng-foo="Here it is used as an attribute"></div>
+
+<div class='ng-foo'>Here it is used as a class</div>
+
+<!-- Here it is used as a comment -->
+<!-- directive:ng-foo -->
+
+Best practice - directives should be used as elements and attributes
+rather than classes and comments

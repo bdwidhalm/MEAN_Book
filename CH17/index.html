@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Directives</title>
+  </head>
+  <body ng-controller="ExampleCtrl">
+    <div ng-repeat="person in people">
+      {{person.firstName}} {{person.lastName}}
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script>
+      'use strict;'
+      var app = angular.module('app', []);
+      app.controller('ExampleCtrl', ['$scope', function($scope) {
+        $scope.people = [
+          {
+            firstName: 'Brian',
+            lastName: 'Widhalm'
+          },
+          {
+            firstName: 'Colin',
+            lastName: 'Ihrig'
+          },
+          {
+            firstName: 'Adam',
+            lastName: 'Bretz'
+          }
+        ];
+      }]);
+    </script>
+  </body>
+</html>
