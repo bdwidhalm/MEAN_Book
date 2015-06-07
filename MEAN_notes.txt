@@ -251,3 +251,20 @@ Example (ng-foo not real directive):
 
 Best practice - directives should be used as elements and attributes
 rather than classes and comments
+
+Angular directives are prefixed with 'ng'
+Custom created directives should be prefixed as well but avoid 'ng'
+i.e. 'sp' etc
+
+CH18
+----
+Controllers
+
+controller stub:
+var app = angular.module('app', []);
+app.controller('main', ['$scope', '$http', function($scope, $http) {
+  // ...
+}]);
+
+$resource is a factory object that was specifically designed to
+interact with RESTful web services.
