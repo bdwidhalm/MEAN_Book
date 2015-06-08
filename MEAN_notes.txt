@@ -272,4 +272,8 @@ interact with RESTful web services.
 CH19
 ----
 'ng-view' - exposed by ngRoute, placeholder for where the contents of a
-rendered HTML file will reside inside the markup.  
+rendered HTML file will reside inside the markup.
+
+CH20
+----
+Angular in Our App
