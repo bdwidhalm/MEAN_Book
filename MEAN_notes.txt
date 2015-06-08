@@ -268,3 +268,8 @@ app.controller('main', ['$scope', '$http', function($scope, $http) {
 
 $resource is a factory object that was specifically designed to
 interact with RESTful web services.
+
+CH19
+----
+'ng-view' - exposed by ngRoute, placeholder for where the contents of a
+rendered HTML file will reside inside the markup.  
