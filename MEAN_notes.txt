@@ -277,3 +277,36 @@ rendered HTML file will reside inside the markup.
 CH20
 ----
 Angular in Our App
+[completed HRapp but errors out on Employee page and Team page]
+
+CH21
+----
+Task Runners
+ability to write files in any way we want (# of files)
+series of tasks that run either automatically or on demand that help
+manage client-side resources
+
+Gulp
+uncomplicated asynchronous task runner written in JavaScript for Node.
+
+Gulp plugins - (over 600) perform one specialized task
+'Your plugin should only do one thing, and do it well'
+
+Gulp task example:
+
+Stylesheet files-
+1. Compile all the Stylus files into plain CSS
+2. Minify the CSS to reduce the file size
+3. Combine all the CSS files into a single file
+4. Write the minified version to ./public/css/main.min.css
+
+JavaScript Files-
+1. Combine all the JavaScript files into a single file in the correct order
+2. Wrap the code in a function to keep the data out of the global namespace
+3. Run a linter (JSHint) and report any code issues
+4. Write the nonminified version to ./public/javascript/main.js
+5. Minify the code to reduce the file size
+6. Write a minified version to ./public/javascript/main.min.js
+
+Every Gulp file should have at least one default task:
+    gulp.task('default', function() {});

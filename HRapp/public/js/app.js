@@ -108,7 +108,7 @@ app.controller('EmployeesCtrl', ['$scope', 'EmployeeService', function($scope, s
   }, _handleError);
 }]);
 
-app.controller('EmployeeCtrl', ['$scope', '$routeParams', 'EmployeeService', 'TeamService', '$q', 'confige', '$route', function($scope, $routeParams, employee, team, $q, config, $route) {
+app.controller('EmployeeCtrl', ['$scope', '$routeParams', 'EmployeeService', 'TeamService', '$q', 'config', '$route', function($scope, $routeParams, employee, team, $q, config, $route) {
 
   $scope.address = {};
 
