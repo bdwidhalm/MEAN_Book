@@ -310,3 +310,9 @@ JavaScript Files-
 
 Every Gulp file should have at least one default task:
     gulp.task('default', function() {});
+
+CH22
+----
+Debugging
+
+Google Chrome's DevTools
