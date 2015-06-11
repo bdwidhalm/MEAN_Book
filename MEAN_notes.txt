@@ -316,3 +316,91 @@ CH22
 Debugging
 
 Google Chrome's DevTools
+
+
+CH23
+----
+Testing
+
+Mocha testing framework
+extremely popular and works in both Node and the browser
+
+'npm install -g mocha'
+
+run mocha - 'mocha'
+it will try to run what js files it finds in the 'test' directory
+or try to run test.js
+
+Defining Tests:  it() function
+it() takes two arguments
+1. string describing what the test does
+2. function representing the test
+
+a test is considered passed if it runs to completion
+failed if it throws an exception
+
+test suites - groups of test in a hierarchy
+use the describe() function
+
+testing interfaces - two most popular
+1. behavior-driven development (BDD)
+2. test-driven development (TDD)
+
+describe() and it() are BDD
+suite() and test() are TDD
+
+Asynchronous Tests:
+Mocha supports asynchonous tests by passing a callback function to it()
+named 'done' by convention
+
+selectively run subsets of tests or suites:
+skip()
+only()
+
+Example:
+it.skip('Test 1', function() {
+});
+
+it.only('Test 2', function() {
+});
+
+it('Test 3', function() {
+});
+
+useful for marking a few test to be run without the need to
+comment out large blocks of code.
+
+Test Hooks:
+optional hooks used to execute code before and after test runs
+useful for setting up data before a test or cleaning up after
+
+four hooks -
+1. before()
+2. beforeEach()
+3. after()
+4. afterEach()
+
+Assertions:
+pieces of logic to test expected conditions
+like that a variable holds a specific value
+or a function should throw an exception based on input
+
+Node's 'assert' module
+or
+more powerful Chai assertion library
+
+'npm install chai'
+
+Chai assertion interfaces:
+should
+expect
+assert
+
+Testing Angular
+testability of Angular is greater
+Angular was built to be Tested
+
+Set Up
+installing Karma and Karma CLI
+'npm install karma --save'
+'npm install -g karma-cli'
