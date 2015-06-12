@@ -404,3 +404,7 @@ Set Up
 installing Karma and Karma CLI
 'npm install karma --save'
 'npm install -g karma-cli'
+
+Karma is a test runner
+
+run 'karma init' in project
